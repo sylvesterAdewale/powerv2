@@ -18,7 +18,7 @@ export default function Home() {
         <Link href="/powermap" passHref>
           <a className="w-[200px] p-2 bg-orange-100 rounded-md">
             <div className="flex justify-between items-center bg-white rounded px-3 py-1">
-              <span className="trispace uppercase font-semibold">Power</span>
+              <span className="trispace uppercase font-semibold">Mint</span>
               <FiArrowRight />
             </div>
           </a>
