@@ -2,7 +2,7 @@ import Social from "@components/Social"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import { FiMenu, FiX } from "react-icons/fi"
+import { FiArrowRight, FiMenu, FiX } from "react-icons/fi"
 
 const Header = () => {
   const [isNav, setNav] = useState(true)
@@ -124,7 +124,12 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <Social />
+      <button className="w-[150px] p-1 bg-orange-100 rounded-md">
+        <div className="flex justify-between items-center bg-white rounded px-3 py-1">
+          <span className="trispace uppercase font-semibold text-sm md:text-base">Mint</span>
+          <FiArrowRight />
+        </div>
+      </button>
       <div onClick={() => setNav(!isNav)} className="lg:hidden p-2 md:p-3 bg-orange-100 md:text-xl rounded-md">
         {isNav ? <FiMenu /> : <FiX />}
       </div>
